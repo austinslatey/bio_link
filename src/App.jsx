@@ -1,4 +1,11 @@
-import './App.css'
+import './App.css';
+
+import ProfilePicture from "./assets/profile_picture.png";
+import Github from "./assets/github.svg";
+import LinkedIn from "./assets/linkedin.svg";
+import Instagram from "./assets/instagram.svg";
+import X from "./assets/x.svg";
+
 
 function App() {
   return (
