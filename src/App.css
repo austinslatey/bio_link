@@ -35,8 +35,8 @@ html, body {
 
 /* Profile picture styling */
 .profilePicture {
-  width: 150px;
-  height: 150px;
+  width: 350px;
+  height: 300px;
   margin: 0 auto 20px;
 }
 
@@ -122,8 +122,8 @@ html, body {
 /* Responsive styling */
 @media (max-width: 768px) {
   .profilePicture {
-    width: 120px;
-    height: 120px;
+    width: 300px;
+    height: 250px;
   }
 
   .username {
@@ -154,8 +154,8 @@ html, body {
 
 @media (max-width: 480px) {
   .profilePicture {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
   }
 
   .username {
