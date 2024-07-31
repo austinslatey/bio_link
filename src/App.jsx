@@ -6,7 +6,6 @@ import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
 import X from "./assets/x.svg";
 
-
 function App() {
   return (
     <>
@@ -44,20 +43,16 @@ function App() {
         </div>
         <div className="socialContainer">
           <a href="https://github.com/austinslatey" target="_blank" rel="noopener" className="socialIcon" aria-label="Github">
-            <svg className={Github} viewBox="0 0 24 24">
-            </svg>
+            <img className="svgIcon" src={Github} alt="Github" />
           </a>
           <a href="https://www.linkedin.com/in/austin-slater-1141b8225/" target="_blank" rel="noopener" className="socialIcon" aria-label="LinkedIn">
-            <svg className={LinkedIn} viewBox="0 0 24 24">
-            </svg>
+            <img className="svgIcon" src={LinkedIn} alt="LinkedIn" />
           </a>
           <a href="https://instagram.com/slate_real" target="_blank" rel="noopener" className="socialIcon" aria-label="Instagram">
-            <svg className={Instagram} viewBox="0 0 24 24">
-            </svg>
+            <img className="svgIcon" src={Instagram} alt="Instagram" />
           </a>
           <a href="https://twitter.com/slate_real" target="_blank" rel="noopener" className="socialIcon" aria-label="X">
-            <svg className={X} viewBox="0 0 24 24">
-            </svg>
+            <img className="svgIcon" src={X} alt="X" />
           </a>
         </div>
       </div>
@@ -65,4 +60,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
