@@ -1,17 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container setup for centering content and responsive design */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
+/* Profile container setup */
 .profileContainer {
   text-align: center;
+  margin-bottom: 20px;
 }
 
+/* Profile picture styling */
 .profilePicture {
   width: 150px;
   height: 150px;
@@ -24,6 +46,7 @@
   border-radius: 50%;
 }
 
+/* Profile title styling */
 .profileTitle {
   margin-bottom: 10px;
 }
@@ -34,6 +57,7 @@
   margin: 0;
 }
 
+/* Profile description styling */
 .profileDescription {
   margin-bottom: 20px;
 }
@@ -43,6 +67,7 @@
   margin: 0;
 }
 
+/* Links container styling */
 .linksContainer {
   width: 100%;
   text-align: center;
@@ -75,10 +100,12 @@
   margin: 0;
 }
 
+/* Social container styling */
 .socialContainer {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .socialIcon {
@@ -90,4 +117,69 @@
   fill: #000;
   width: 100%;
   height: 100%;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .profilePicture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .header {
+    font-size: 18px;
+  }
+
+  .linkContent {
+    padding: 8px 16px;
+  }
+
+  .linkText {
+    font-size: 14px;
+  }
+
+  .socialIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profilePicture {
+    width: 100px;
+    height: 100px;
+  }
+
+  .username {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 16px;
+  }
+
+  .linkContent {
+    padding: 6px 12px;
+  }
+
+  .linkText {
+    font-size: 12px;
+  }
+
+  .socialIcon {
+    width: 25px;
+    height: 25px;
+  }
 }
