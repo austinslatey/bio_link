@@ -6,4 +6,5 @@ This repository showcases my profile, providies links to my personal portfolio w
 
 # Source_List
 Github, LinkedIn, Instagram icons by Svgrepo
+
 X icon by Icons8
