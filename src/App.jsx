@@ -53,11 +53,11 @@ function App() {
           <a href="https://www.linkedin.com/in/austin-slater-1141b8225/" target="_blank" rel="noopener" className="socialIcon" aria-label="LinkedIn">
             <img className="svgIcon" src={LinkedIn} alt="LinkedIn" />
           </a>
+          <a href="https://x.com/austinslater_" target="_blank" rel="noopener" className="socialIcon" aria-label="X">
+            <img className="svgIcon" src={X} alt="X" />
+          </a>
           <a href="https://instagram.com/slate_real" target="_blank" rel="noopener" className="socialIcon" aria-label="Instagram">
             <img className="svgIcon" src={Instagram} alt="Instagram" />
-          </a>
-          <a href="https://twitter.com/slate_real" target="_blank" rel="noopener" className="socialIcon" aria-label="X">
-            <img className="svgIcon" src={X} alt="X" />
           </a>
         </div>
       </div>
