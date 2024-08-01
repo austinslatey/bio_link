@@ -1,6 +1,7 @@
 import './App.css';
 
 import ProfilePicture from "./assets/profile_picture.png";
+import ReactIcon from "./assets/react.svg";
 import Github from "./assets/github.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -36,7 +37,11 @@ function App() {
           <div className="link">
             <a href="https://austinslateys-portfolio.netlify.app" target="_blank" rel="noopener" className="linkButton">
               <div className="linkContent">
-                <p className="linkText">My Portfolio</p>
+
+                <p className="linkText">
+                  <img src={ReactIcon} alt="react_icon" className="icon" />
+                  My Portfolio
+                </p>
               </div>
             </a>
           </div>
