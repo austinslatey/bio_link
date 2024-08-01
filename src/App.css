@@ -6,7 +6,7 @@ html, body {
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
-  background-color: #242424;
+  background: linear-gradient(180deg, #35377b 0%, #6b6db2 100%);
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -14,6 +14,7 @@ html, body {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: -100px;
 }
 
 /* Container setup for centering content and responsive design */
@@ -30,14 +31,14 @@ html, body {
 /* Profile container setup */
 .profileContainer {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Profile picture styling */
 .profilePicture {
   width: 350px;
   height: 300px;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
 }
 
 .image {
@@ -48,7 +49,7 @@ html, body {
 
 /* Profile title styling */
 .profileTitle {
-  margin-bottom: 10px;
+  margin-bottom: 25px;  
 }
 
 .username {
@@ -59,11 +60,11 @@ html, body {
 
 /* Profile description styling */
 .profileDescription {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .description {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -76,11 +77,11 @@ html, body {
 
 .header {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .link {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .linkButton {
@@ -90,14 +91,29 @@ html, body {
 
 .linkContent {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 100px;
   background-color: #f0f0f0;
-  border-radius: 5px;
+  border-radius: 30px;
+  box-shadow: 8px 6px 10px rgb(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.linkContent:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced box shadow on hover */
 }
 
 .linkText {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.linkText .icon {
+  float: left;
+  margin-right: 20px;
 }
 
 /* Social container styling */
@@ -109,8 +125,7 @@ html, body {
 }
 
 .socialIcon {
-  width: 40px;
-  height: 40px;
+  padding: 0 10px;
 }
 
 .svgIcon {
@@ -154,12 +169,12 @@ html, body {
 
 @media (max-width: 480px) {
   .profilePicture {
-    width: 250px;
+    width: 225px;
     height: 200px;
   }
 
   .username {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .description {
@@ -167,7 +182,7 @@ html, body {
   }
 
   .header {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .linkContent {
@@ -179,7 +194,7 @@ html, body {
   }
 
   .socialIcon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
 }
