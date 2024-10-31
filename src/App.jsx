@@ -6,6 +6,7 @@ import Github from "./assets/github.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
 import X from "./assets/x.svg";
+import Medal from "./assets/medal.png";
 
 function App() {
   return (
@@ -58,6 +59,9 @@ function App() {
           </a>
           <a href="https://instagram.com/slate_real" target="_blank" rel="noopener" className="socialIcon" aria-label="Instagram">
             <img className="svgIcon" src={Instagram} alt="Instagram" />
+          </a>
+          <a href="https://medal.tv/u/ayyeslateyy?invite=ur-MSxRdEEsMjEyMzgxMDI1LA" target="_blank" rel="noopener" className="socialIcon" aria-label="Instagram">
+          <img src={Medal} alt="Medal" />
           </a>
         </div>
       </div>
