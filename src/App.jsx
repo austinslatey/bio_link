@@ -1,4 +1,7 @@
 import './App.css';
+import { useCallback } from 'react'
+import Particles from 'react-tsparticles'
+import { loadFull } from 'tsparticles'
 
 import ProfilePicture from "./assets/profile_picture.png";
 import ReactIcon from "./assets/react.svg";
@@ -9,8 +12,40 @@ import X from "./assets/x.svg";
 import Medal from "./assets/medal.png";
 
 function App() {
+
+
+
+  const init = useCallback(async (engine) => {
+    await loadFull(engine)
+  })
+
   return (
     <>
+      <Particles options={{
+        particles: {
+          color: {
+            value: "#fff"
+          },
+          number: {
+            value: 80
+          },
+          opacity: {
+            value: { min: 0.1, max: 0.5 }
+          },
+          shape: {
+            type: "circle"
+          },
+          size: {
+            value: { min: 1, max: 5 }
+          },
+          move: {
+            direction: "bottom-right",
+            enable: true,
+            speed: { min: 3, max: 5 },
+            straight: true
+          }
+        }
+      }} init={init} />
       <div className="container">
         <div className="profileContainer">
           <div className="profilePicture">
@@ -61,9 +96,11 @@ function App() {
             <img className="svgIcon" src={Instagram} alt="Instagram" />
           </a>
           <a href="https://medal.tv/u/ayyeslateyy?invite=ur-MSxRdEEsMjEyMzgxMDI1LA" target="_blank" rel="noopener" className="socialIcon" aria-label="Instagram">
-          <img src={Medal} alt="Medal" />
+            <img src={Medal} alt="Medal" />
           </a>
         </div>
+
+
       </div>
     </>
   )
