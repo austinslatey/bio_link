@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Particles options={{
+      <Particles className='particles' options={{
         particles: {
           color: {
             value: "#fff"
@@ -61,15 +61,16 @@ function App() {
             <h1 className="username">Austin Slater</h1>
           </div>
           <div className="profileDescription">
+            <div>
+              <h3 className="header">Full-Stack Developer</h3>
+            </div>
             <h2 className="description">
               Innovative Web Solutions, Continuous Learner, Competitive Gamer
             </h2>
           </div>
         </div>
         <div className="linksContainer">
-          <div>
-            <h3 className="header">Full-Stack Developer</h3>
-          </div>
+
           <div className="link">
             <a href="https://austinslateys-portfolio.netlify.app" target="_blank" rel="noopener" className="linkButton">
               <div className="linkContent">
@@ -96,7 +97,7 @@ function App() {
             <img className="svgIcon" src={Instagram} alt="Instagram" />
           </a>
           <a href="https://medal.tv/u/ayyeslateyy?invite=ur-MSxRdEEsMjEyMzgxMDI1LA" target="_blank" rel="noopener" className="socialIcon" aria-label="Instagram">
-            <img src={Medal} alt="Medal" />
+            <img className='svgIcon' src={Medal} alt="Medal" />
           </a>
         </div>
 

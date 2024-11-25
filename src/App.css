@@ -17,6 +17,8 @@ html, body {
   margin-top: -100px;
 }
 
+
+
 /* Container setup for centering content and responsive design */
 .container {
   display: flex;
@@ -26,12 +28,18 @@ html, body {
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  border-radius: 30px;
+  box-shadow: 8px 6px 20px rgb(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Profile container setup */
 .profileContainer {
   text-align: center;
   margin-bottom: 10px;
+  padding: 10px;
+
+  
 }
 
 /* Profile picture styling */
@@ -39,6 +47,9 @@ html, body {
   width: 350px;
   height: 300px;
   margin: 0 auto 10px;
+  border-radius: 30px;
+  box-shadow: 8px 6px 20px rgb(0, 0, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image {
@@ -49,8 +60,11 @@ html, body {
 
 /* Profile title styling */
 .profileTitle {
-  margin-bottom: 25px;  
+  padding-top: 24px;
+  margin-bottom: 24px;  
+
 }
+
 
 .username {
   font-size: 24px;
